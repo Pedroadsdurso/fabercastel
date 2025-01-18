@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado | Correios</title>
+    <!-- Importando a fonte Poppins do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos gerais */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: red; /* Amarelo dos Correios */
+            font-family: 'Poppins', sans-serif; /* Aplicando a fonte Poppins */
+        }
+
+        /* Container principal */
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #ffffff; /* Fundo branco */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 20px; /* Margem adicionada ao container */
+        }
+
+        /* Logo */
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        /* Mensagens */
+        .message {
+            font-size: 24px;
+            color: #003b5c; /* Azul escuro dos Correios */
+            margin-bottom: 10px;
+            font-weight: 600; /* Peso mais forte para a mensagem */
+        }
+
+        .details {
+            font-size: 18px;
+            color: #003b5c;
+            margin-top: 10px;
+        }
+
+        /* Botão */
+        .button {
+            background-color: red; /* Azul escuro dos Correios */
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+            font-weight: 600; /* Peso mais forte para o botão */
+        }
+
+        .button:hover {
+            background-color: red; /* Cor mais escura para o hover */
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .logo {
+                width: 120px;
+            }
+            .message {
+                font-size: 20px;
+            }
+            .details {
+                font-size: 16px;
+            }
+            .button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="/notasp/logo.png" alt="Logo">
+        <div class="message">
+            Seu pedido foi liberado com sucesso!
+        </div>
+        <div class="details">
+           <p>As atualizações serão enviadas para o seu e-mail.</p> 
+        </div>
+        <a href="/index.html" class="button">Voltar à página inicial</a>
+    </div>
+</body>
+<script>
+    localStorage.clear();
+</script>
+</html>
